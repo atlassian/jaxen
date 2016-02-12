@@ -12,7 +12,7 @@
   <artifactId>jaxen</artifactId>
   <packaging>bundle</packaging>
   <name>jaxen</name>
-  <version>1.2.0</version>
+  <version>1.2.0-atlassian</version>
   <description>Jaxen is a universal Java XPath engine.</description>
   <url>http://jaxen.codehaus.org/</url>
   <licenses>
@@ -206,8 +206,9 @@
   </contributors>
 
   <scm>
-    <connection>scm:svn:https://svn.codehaus.org/jaxen/trunk/jaxen/</connection>
-    <url>http://fisheye.codehaus.org/browse/jaxen/</url>
+    <connection>scm:git@https://github.com/atlassian/jaxen.git</connection>
+    <developerConnection>scm:git@https://github.com/atlassian/jaxen.git</developerConnection>
+    <url>https://github.com/atlassian/jaxen/</url>
   </scm>
 
   <organization>
@@ -431,10 +432,13 @@
   </reporting>
 
   <distributionManagement>
-    <site>
-      <id>default</id>
-      <name>Default Site</name>
-      <url>scp://jaxen.codehaus.org/home/projects/jaxen/public_html</url>
-    </site>
+    <repository>
+      <id>atlassian-3rdparty</id>
+      <url>https://maven.atlassian.com/3rdparty</url>
+    </repository>
+    <snapshotRepository>
+      <id>atlassian-3rdparty-snapshot</id>
+      <url>https://maven.atlassian.com/3rdparty-snapshot</url>
+    </snapshotRepository>
   </distributionManagement>
 </project>
