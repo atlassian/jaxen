@@ -12,14 +12,18 @@
   <artifactId>jaxen</artifactId>
   <packaging>bundle</packaging>
   <name>jaxen</name>
-  <version>1.2.0-atlassian-1</version>
+  <version>1.2.0-atlassian-2</version>
   <description>Jaxen is a universal Java XPath engine.</description>
   <url>http://jaxen.codehaus.org/</url>
+
   <licenses>
     <license>
-      <url>http://jaxen.codehaus.org/license.html</url>
+      <name>BSD 3-Clause License</name>
+      <url>https://opensource.org/licenses/BSD-3-Clause</url>
+      <distribution>repo</distribution>
     </license>
   </licenses>
+
   <issueManagement>
     <system>JIRA</system>
     <url>http://jira.codehaus.org/BrowseProject.jspa?id=10022</url>
@@ -206,8 +210,8 @@
   </contributors>
 
   <scm>
-    <connection>scm:git@https://github.com/atlassian/jaxen.git</connection>
-    <developerConnection>scm:git@https://github.com/atlassian/jaxen.git</developerConnection>
+    <connection>scm:git:git://github.com/atlassian/jaxen.git</connection>
+    <developerConnection>scm:git:git@github.com:atlassian/jaxen.git</developerConnection>
     <url>https://github.com/atlassian/jaxen/</url>
   </scm>
 
