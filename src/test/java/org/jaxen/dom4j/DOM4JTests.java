@@ -86,7 +86,6 @@ public class DOM4JTests extends TestCase {
     public static Test suite() {
         
         TestSuite result = new TestSuite();
-        result.addTest(new TestSuite(DocumentNavigatorTest.class));
         result.addTest(new TestSuite(XPathTest.class));
         return result;
         
