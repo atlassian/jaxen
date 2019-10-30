@@ -15,10 +15,35 @@
     <url>http://www.codehaus.org</url>
   </organization>
 
+  <licenses>
+    <license>
+      <name>The Werken Company</name>
+      <url>https://github.com/codehaus/jaxen/blob/master/jaxen/LICENSE.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
   <scm>
-    <connection>scm:cvs:pserver:anonymous@cvs.jaxen.codehaus.org:/home/projects/jaxen/scm:jaxen</connection>
-    <url>http://cvs.jaxen.codehaus.org</url>
+    <connection>scm:git:git@github.com:atlassian/jaxen.git</connection>
+    <developerConnection>scm:git:git@github.com:atlassian/jaxen.git</developerConnection>
+    <url>https://github.com/atlassian/jaxen</url>
+    <tag>HEAD</tag>
   </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>atlassian-3rdparty</id>
+      <url>https://packages.atlassian.com/maven/3rdparty</url>
+    </repository>
+    <snapshotRepository>
+      <id>atlassian-3rdparty-snapshot</id>
+      <url>https://packages.atlassian.com/maven/3rdparty-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <properties>
+    <doclint>none</doclint>
+  </properties>
 
   <dependencies>
     <dependency>
@@ -98,17 +123,4 @@
     </plugins>
   </build>
 
-  <reporting>
-    <plugins>
-      <plugin>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <configuration>
-          <links>
-            <link>http://java.sun.com/j2se/1.4.2/docs/api/index.html</link>
-          </links>
-          <stylesheetfile>./xdocs/stylesheets/javadoc-style.css</stylesheetfile>
-        </configuration>
-      </plugin>
-    </plugins>
-  </reporting>
 </project>
